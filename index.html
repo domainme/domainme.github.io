@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Top-Up Platform</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#product">Product</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="content">
+        <div id="product">
+            <h2>Available Product<h2>
+                    <div class="list-game">
+                        <h2>Games</h2>
+                        <div class="grid">
+                            <!-- Game images will be injected here by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="list-aplikasi">
+                        <h2>Applications</h2>
+                        <div class="grid">
+                            <!-- Application images will be injected here by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="list-ewalet">
+                        <h2>E-Wallets</h2>
+                        <div class="grid">
+                            <!-- E-wallet images will be injected here by JavaScript -->
+                        </div>
+                    </div>
+        </div>
+
+        <div id="about" class="about">
+            <h2>About</h2>
+            <p>Website ini merupakan platform top-up berbasis web yang dibuat untuk tujuan edukasi dan sebagai pelengkap
+                tugas PKK (Produktif Kreatif Kewirausahaan). Seluruh gambar, nama, dan harga serta desain yang
+                ditampilkan memiliki hak cipta. Kami memahami setiap resiko dari penggunaan dan dengan sadar menggunakan
+                gambar, nama, dan harga pada halaman web yang kami buat dan kami berjanji tidak akan menyalahgunakan
+                asset-asset yang telah disebutkan sebelumnya. Sekali lagi kami tegaskan bahwa website ini hanya untuk
+                tujuan edukasi. Terimakasih!!</p>
+            <p>Website ini dibuat oleh Rainsta-Team</p>
+            <p>Terimakasih kepada Allah Subhanahu wa ta'ala, dan seluruh perusahaan, orang, yang terkait dalam membantu
+                penyelesain website ini.</p>
+        </div>
+
+        <div id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <div class="admin">
+                <div class="name">Rainsta Asnamarch Pratama</div>
+                <div class="email">rainstaasnamarchpratama@gmail.com</div>
+                <a href="mailto:rainstaasnamarchpratama@gmail.com">
+                    <button>Hubungi</button>
+                </a>
+            </div>
+            <div class="admin">
+                <div class="name">Raziq Khairul Azmi</div>
+                <div class="email">-</div>
+                <button disabled>Hubungi</button>
+            </div>
+            <div class="admin">
+                <div class="name">Praja Setianto</div>
+                <div class="email">-</div>
+                <button disabled>Hubungi</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        © Rainsta-Team2024
+    </footer>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 id="popup-title">Pilih Item</h2>
+            <div id="popup-prices"></div>
+            <br><label for="item-select">Pilih Item:</label><br>
+            <select id="item-select"></select>
+            <br><label for="uid">Isi UID Anda:</label><br>
+            <input type="text" id="uid" placeholder="Masukkan UID">
+            <div class="popup-buttons">
+                <button onclick="buy()">Beli</button>
+                <button onclick="closePopup()">Batal</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
